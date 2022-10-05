@@ -19,22 +19,22 @@
             <div class="header__menu menu">
                 <ul class="menu__list list">
                     <li class="menu__item">
-                        <a href="" class="menu__link link">
+                        <a href="" class="menu__link link no-select-text">
                             Main
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a href="" class="menu__link link">
+                        <a href="" class="menu__link link no-select-text">
                             About
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a href="" class="menu__link link">
+                        <a href="" class="menu__link link no-select-text">
                             Products
                         </a>
                     </li>
                     <li class="menu__item">
-                        <a href="" class="menu__link link">
+                        <a href="" class="menu__link link no-select-text">
                             Contacts
                         </a>
                     </li>
@@ -47,22 +47,22 @@
                 <div class="popup__toggle-container toggle">
                     <ul class="toggle__list list">
                         <li class="toggle__item">
-                            <a href="" class="toggle__link link">
+                            <a href="" class="toggle__link link no-select-text">
                                 Home
                             </a>
                         </li>
                         <li class="toggle__item">
-                            <a href="" class="toggle__link link">
+                            <a href="" class="toggle__link link no-select-text">
                                 About
                             </a>
                         </li>
                         <li class="toggle__item">
-                            <a href="" class="toggle__link link">
+                            <a href="" class="toggle__link link no-select-text">
                                 Products
                             </a>
                         </li>
                         <li class="toggle__item">
-                            <a href="" class="toggle__link link">
+                            <a href="" class="toggle__link link no-select-text">
                                 Contacts
                             </a>
                         </li>
@@ -75,12 +75,12 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="stars-wrapper">
-                    <!-- <span class="snowflake"></span> -->
+                    <span class="snowflake"></span>
                     <section class="intro">
                         <div class="intro__container stretch-container">
-                            <h1 class="intro__caption caption">Main Site Title</h1>
-                            <p class="intro__description text">Lorem ipsum descripsum</p>
-                            <a href="" class="intro__link link">Call to action</a>
+                            <h1 class="intro__caption caption no-select-text">Main Site Title</h1>
+                            <p class="intro__description text no-select-text">Lorem ipsum descripsum</p>
+                            <a href="" class="intro__link link no-select-text">Call to action</a>
                         </div>
                     </section>
                 </div>
@@ -140,13 +140,13 @@
                         <form class="contacts__form form" action="">
                             <ul class="form__list list">
                                 <li class="form__item">
-                                    <input type="text" class="form__input" placeholder="Name">
+                                    <input type="text" class="form__input" placeholder="Name" name="name">
                                 </li>
                                 <li class="form__item">
-                                    <input type="tel" class="form__input" placeholder="Phone">
+                                    <input type="tel" class="form__input" placeholder="Phone" name="phone">
                                 </li>
                                 <li class="form__item">
-                                    <select class="form__select" name="" id="">
+                                    <select class="form__select" name="gender" id="gender">
                                         <option class="form__option" value="" disabled selected hidden>Gender
                                         </option>
                                         <option class="form__option" value="boy">Boy</option>
@@ -155,15 +155,15 @@
                                     </select>
                                 </li>
                                 <li class="form__item">
-                                    <input type="email" class="form__input" placeholder="Email">
+                                    <input type="email" class="form__input" placeholder="Email" name="email">
                                 </li>
                                 <li class="form__item form__item--wide">
-                                    <textarea class="form__textarea" name="" id="" cols="30" rows="10"
+                                    <textarea class="form__textarea" name="wish" id="wish" cols="30" rows="10"
                                         placeholder="Your wish"></textarea>
                                 </li>
                                 <li class="form__item form__item--wide">
-                                    <input class="form__checkbox" type="checkbox" id="check">
-                                    <label class="form__label" for="check">Want Coca-cola with present?</label>
+                                    <input class="form__checkbox visually-hidden" type="checkbox" id="check" name="bonus-cola">
+                                    <label class="form__label no-select-text" for="check">Want Coca-cola with present?</label>
                                 </li>
                             </ul>
                         </form>
