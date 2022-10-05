@@ -100,10 +100,23 @@ function snowCreator() {
     }
 }
 
+function menuAnimation () {
+    const menuLink = document.querySelectorAll ('.menu__link');
+
+    for (let i = 0; i < menuLink.length; i++) {
+        const firstText = menuLink[i].querySelector('.menu__text');
+        const secondText = document.createElement('span');
+        secondText.innerHTML =  firstText.textContent;
+        secondText.classList.add('menu__text--hidden');
+        menuLink[i].appendChild (secondText);
+    }
+}
+
 laptopSwiper();
 toggleChange();
 giftsSelection();
 snowCreator();
+menuAnimation();
 window.addEventListener('resize', () => {
     laptopSwiper();
     snowCreator();

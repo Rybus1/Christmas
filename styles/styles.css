@@ -145,57 +145,38 @@ img {
     display: block;
     margin-right: 70px;
     position: relative;
-    height: fit-content;
-    min-width: fit-content;
-    overflow: hidden;
 }
-
-.menu__item:hover>.menu__link {
-    transition: all 400ms;
-    transform: translateY(-20px);
-}
-
-/* .menu__item::after {
-    display: block;
-    width: fit-content;
-    font-family: "Roboto", serif;
-    font-size: 16px;
-    line-height: 19px;
-    font-weight: 400;
-    color: #D02B2B;
-    top: 20px;
-    position: absolute;
-} */
-
-/* .menu__item:nth-of-type(1):after {
-    content: "Main";
-}
-
-.menu__item:nth-of-type(2):after {
-    content: "About";
-}
-
-.menu__item:nth-of-type(3):after {
-    content: "Products";
-}
-
-.menu__item:nth-of-type(4):after {
-    content: "Contacts";
-} */
-
-/* .menu__item:hover > .menu__item::after {
-    position: absolute;
-    top: 0;
-    transition: all 400ms;
-    opacity: 1;
-} */
 
 .menu__link {
     font-family: "Roboto", serif;
     font-size: 16px;
     line-height: 19px;
     font-weight: 400;
-    transition: all 500ms ease-in;
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+
+.menu__text {
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-flex;
+}
+
+.menu__text--hidden {
+    transition: all 0.3s ease;
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    color: #D02B2B;
+}
+
+.menu__link:hover > .menu__text {
+    transform: translateY(-100%);
+}
+
+.menu__link:hover > .menu__text--hidden {
+    transform: translateY(-100%);
 }
 
 .stretch-container {
@@ -222,7 +203,7 @@ img {
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     border-top-left-radius: 50%;
-    z-index: 4;
+    z-index: 5;
     padding: 0;
 }
 
@@ -237,7 +218,7 @@ img {
     display: block;
     width: 100%;
     height: 100%;
-    z-index: 5;
+    z-index: 6;
 }
 
 .popup--closed .popup__line::before {
@@ -294,7 +275,7 @@ img {
     top: 0;
     left: calc(50vw - 225px);
     background-color: #D02B2B;
-    z-index: 3;
+    z-index: 4;
     display: flex;
 }
 
@@ -615,10 +596,14 @@ img {
     padding-bottom: 80px;
     background-repeat: no-repeat;
     background-size: auto 100%;
+    position: relative;
+    z-index: 3;
 }
 
 @media (min-width: 1440px) {
     .gifts {
+        position: static;
+        z-index: auto;
         width: 100%;
         min-height: 100vh;
         padding-top: 200px;
