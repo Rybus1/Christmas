@@ -11,15 +11,17 @@ function laptopSwiper() {
             mousewheel: true,
         });
 
-        mySwiper.on('slideChange', () => {
-            if (mySwiper.activeIndex == 0) {
-                snowflake.style.top = '41vh';
-            } else if (mySwiper.activeIndex == 1) {
-                snowflake.style.top = '83vh';
-            } else if (mySwiper.activeIndex == 2) {
-                snowflake.style.top = '-100vh';
-            }
-        })
+        if (snowflake) {
+            mySwiper.on('slideChange', () => {
+                if (mySwiper.activeIndex == 0) {
+                    snowflake.style.top = '41vh';
+                } else if (mySwiper.activeIndex == 1) {
+                    snowflake.style.top = '83vh';
+                } else if (mySwiper.activeIndex == 2) {
+                    snowflake.style.top = '-100vh';
+                }
+            })
+        }
 
         slider.dataset.laptop = "true";
     }
@@ -33,10 +35,10 @@ function laptopSwiper() {
     }
 }
 
-function toggleChange () {
+function toggleChange() {
     const toggle = document.querySelector('.popup__toggle-button');
     const popup = document.querySelector('.popup');
-    
+
     toggle.addEventListener('click', function () {
         if (popup.classList.contains('popup--closed')) {
             popup.classList.remove('popup--closed');
@@ -48,12 +50,12 @@ function toggleChange () {
     });
 }
 
-function giftsSelection () {
-    const giftList = document.querySelectorAll ('.gifts__item');
-    const zoomedList = document.querySelectorAll ('.present__item');
+function giftsSelection() {
+    const giftList = document.querySelectorAll('.gifts__item');
+    const zoomedList = document.querySelectorAll('.present__item');
 
     for (let i = 0; i < giftList.length; i++) {
-        giftList[i].addEventListener ('click', () => {
+        giftList[i].addEventListener('click', () => {
             giftList.forEach(gift => {
                 gift.classList.remove('gifts__item--active');
             });
@@ -77,8 +79,8 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
-function snowCreator () {
-    const snowContainer = document.querySelector ('.body__snow-container');
+function snowCreator() {
+    const snowContainer = document.querySelector('.body__snow-container');
     snowContainer.innerHTML = '';
     for (let i = 0; i < 50; i++) {
         const newDiv = document.createElement('div');
