@@ -2,179 +2,184 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Coca-cola: Happy New Year!</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Coca-cola: Happy New Year!</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body class="body">
-    <div class="body__snow-container"></div>
-    <header class="header stretch-container">
-        <a class="link" href="index.html"><img class="header__logo" src="./images/main-logo.png" alt="header__logo"
-                width="198" height="65"></a>
-        <nav class="header__navigation">
-            <div class="header__menu menu">
-                <ul class="menu__list list">
-                    <li class="menu__item">
-                        <a href="" class="menu__link link no-select-text">
-                            <span class="menu__text">Main</span>
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="" class="menu__link link no-select-text">
-                            <span class="menu__text">About</span>
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="" class="menu__link link no-select-text">
-                            <span class="menu__text">Products</span>
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="" class="menu__link link no-select-text">
-                            <span class="menu__text">Contacts</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="header__popup popup popup--closed">
-                <button class="popup__toggle-button">
-                    <span class="popup__line"></span>
-                </button>
-                <div class="popup__toggle-container toggle">
-                    <ul class="toggle__list list">
-                        <li class="toggle__item">
-                            <a href="" class="toggle__link link no-select-text">
-                                Home
-                            </a>
-                        </li>
-                        <li class="toggle__item">
-                            <a href="" class="toggle__link link no-select-text">
-                                About
-                            </a>
-                        </li>
-                        <li class="toggle__item">
-                            <a href="" class="toggle__link link no-select-text">
-                                Products
-                            </a>
-                        </li>
-                        <li class="toggle__item">
-                            <a href="" class="toggle__link link no-select-text">
-                                Contacts
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main class="main swiper swiper-container" data-laptop="false">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="stars-wrapper">
-                    <span class="snowflake"></span>
-                    <section class="intro">
-                        <div class="intro__container stretch-container">
-                            <h1 class="intro__caption caption no-select-text">Main Site Title</h1>
-                            <p class="intro__description text no-select-text">Lorem ipsum descripsum</p>
-                            <a href="" class="intro__link link no-select-text">Call to action</a>
-                        </div>
-                    </section>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <section class="gifts" id="gifts">
-                    <div class="gifts__container stretch-container">
-                        <div class="gifts__selection">
-                            <h2 class="gifts__caption caption">At least somewhere you can feel new year atmosphere
-                            </h2>
-                            <p class="gifts__text text">Choose your present:</p>
-                            <ul class="gifts__list list">
-                                <li class="gifts__item gifts__item--active">
-                                    <span class="gifts__picture gifts__picture--sock"></span>
-                                </li>
-                                <li class="gifts__item">
-                                    <span class="gifts__picture gifts__picture--hat"></span>
-                                </li>
-                                <li class="gifts__item">
-                                    <span class="gifts__picture gifts__picture--bag"></span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="gifts__inner-container present">
-                            <ul class="present__list list">
-                                <li class="present__item">
-                                    <h3 class="present__caption caption">Best sock ever</h3>
-                                    <p class="present__description text">Reuglar sock have no present
-                                        inside.<br>Lorem
-                                        Ipsum
-                                        is simply
-                                        dumm y text of the printing and types etting industry. Lorem </p>
-                                </li>
-                                <li class="present__item visually-hidden">
-                                    <h3 class="present__caption caption">Santa's hat</h3>
-                                    <p class="present__description text">Red hat with a white pompon<br>Lorem Ipsum
-                                        is simply
-                                        dumm y text of the printing and types etting industry. Lorem </p>
-                                </li>
-                                <li class="present__item visually-hidden">
-                                    <h3 class="present__caption caption">Bag with presents</h3>
-                                    <p class="present__description text">A collection of child's dreams<br>Lorem
-                                        Ipsum
-                                        is simply
-                                        dumm y text of the printing and types etting industry. Lorem </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <div class="swiper-slide">
-                <section class="contacts">
-                    <div class="contacts__container stretch-container">
-                        <h2 class="contacts__caption caption">Write us<br>
-                            for real presents</h2>
-                        <form class="contacts__form form" action="#">
-                            <ul class="form__list list">
-                                <li class="form__item">
-                                    <input type="text" class="form__input" placeholder="Name" name="name">
-                                </li>
-                                <li class="form__item">
-                                    <input type="tel" class="form__input" placeholder="Phone" name="phone">
-                                </li>
-                                <li class="form__item">
-                                    <select class="form__select" name="gender" id="gender">
-                                        <option class="form__option" value="" disabled selected hidden>Gender
-                                        </option>
-                                        <option class="form__option" value="boy">Boy</option>
-                                        <option class="form__option" value="girl">Girl</option>
-                                        <option class="form__option" value="other">Other</option>
-                                    </select>
-                                </li>
-                                <li class="form__item">
-                                    <input type="email" class="form__input" placeholder="Email" name="email">
-                                </li>
-                                <li class="form__item form__item--wide">
-                                    <textarea class="form__textarea" name="wish" id="wish" cols="30" rows="10"
-                                        placeholder="Your wish"></textarea>
-                                </li>
-                                <li class="form__item form__item--wide">
-                                    <input class="form__checkbox visually-hidden" type="checkbox" id="check"
-                                        name="bonus-cola">
-                                    <label class="form__label no-select-text" for="check">Want Coca-cola with
-                                        present?</label>
-                                </li>
-                            </ul>
-                        </form>
-                    </div>
-                </section>
-            </div>
+  <div class="body__snow-container"></div>
+  <header class="header stretch-container">
+    <a class="link" href="index.html"><img class="header__logo" src="./images/main-logo.png" alt="header__logo"
+        width="198" height="65"></a>
+    <nav class="header__navigation">
+      <div class="header__menu menu">
+        <ul class="menu__list list">
+          <li class="menu__item">
+            <a href="index.html" class="menu__link link no-select-text">
+              <span class="menu__text">Main</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="" class="menu__link link no-select-text">
+              <span class="menu__text">About</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="" class="menu__link link no-select-text">
+              <span class="menu__text">Products</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="" class="menu__link link no-select-text">
+              <span class="menu__text">Contacts</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__popup popup popup--closed">
+        <button class="popup__toggle-button">
+          <span class="popup__line"></span>
+        </button>
+        <div class="popup__toggle-container toggle">
+          <ul class="toggle__list list">
+            <li class="toggle__item">
+              <a href="index.html" class="toggle__link link no-select-text">
+                Home
+              </a>
+            </li>
+            <li class="toggle__item">
+              <a href="" class="toggle__link link no-select-text">
+                About
+              </a>
+            </li>
+            <li class="toggle__item">
+              <a href="" class="toggle__link link no-select-text">
+                Products
+              </a>
+            </li>
+            <li class="toggle__item">
+              <a href="" class="toggle__link link no-select-text">
+                Contacts
+              </a>
+            </li>
+          </ul>
         </div>
-    </main>
+      </div>
+    </nav>
+  </header>
+  <main class="main swiper swiper-container" data-laptop="false">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="stars-wrapper">
+          <span class="snowflake"></span>
+          <section class="intro">
+            <div class="intro__container stretch-container">
+              <h1 class="intro__caption caption no-select-text">Main Site Title</h1>
+              <p class="intro__description text no-select-text">Lorem ipsum descripsum</p>
+              <a href="" class="intro__link link no-select-text">Call to action</a>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <section class="gifts" id="gifts">
+          <div class="gifts__container stretch-container">
+            <div class="gifts__selection">
+              <h2 class="gifts__caption caption">At least somewhere you can feel new year atmosphere
+              </h2>
+              <p class="gifts__text text">Choose your present:</p>
+              <ul class="gifts__list list">
+                <li class="gifts__item gifts__item--active">
+                  <span class="gifts__picture gifts__picture--sock"></span>
+                </li>
+                <li class="gifts__item">
+                  <span class="gifts__picture gifts__picture--hat"></span>
+                </li>
+                <li class="gifts__item">
+                  <span class="gifts__picture gifts__picture--bag"></span>
+                </li>
+              </ul>
+            </div>
+            <div class="gifts__inner-container present">
+              <ul class="present__list list">
+                <li class="present__item">
+                  <h3 class="present__caption caption">Best sock ever</h3>
+                  <p class="present__description text">Reuglar sock have no present
+                    inside.<br>Lorem
+                    Ipsum
+                    is simply
+                    dumm y text of the printing and types etting industry. Lorem </p>
+                </li>
+                <li class="present__item visually-hidden">
+                  <h3 class="present__caption caption">Santa's hat</h3>
+                  <p class="present__description text">Red hat with a white pompon<br>Lorem Ipsum
+                    is simply
+                    dumm y text of the printing and types etting industry. Lorem </p>
+                </li>
+                <li class="present__item visually-hidden">
+                  <h3 class="present__caption caption">Bag with presents</h3>
+                  <p class="present__description text">A collection of child's dreams<br>Lorem
+                    Ipsum
+                    is simply
+                    dumm y text of the printing and types etting industry. Lorem </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="swiper-slide">
+        <section class="contacts">
+          <div class="contacts__container stretch-container">
+            <h2 class="contacts__caption caption">Write us<br>
+              for real presents</h2>
+            <form class="contacts__form form" action="#">
+              <ul class="form__list list">
+                <li class="form__item">
+                  <input type="text" class="form__input" placeholder="Name" name="name">
+                </li>
+                <li class="form__item">
+                  <input type="tel" class="form__input" placeholder="Phone" name="phone">
+                </li>
+                <li class="form__item">
+                  <div class="form__select-box">
+                    <div class="form__option-container">
+                      <div class="form__option">
+                        <input type="radio" class="radio" id="boy" name="category" />
+                        <label class="form__select-label" for="boy">Boy</label>
+                      </div>
+                      <div class="form__option">
+                        <input type="radio" class="radio" id="girl" name="category" />
+                        <label class="form__select-label" for="girl">Girl</label>
+                      </div>
+                    </div>
+                    <div class="form__selected selected">Gender</div>
+                  </div>
+                </li>
+                <li class="form__item">
+                  <input type="email" class="form__input" placeholder="Email" name="email">
+                </li>
+                <li class="form__item form__item--wide">
+                  <textarea class="form__textarea" name="wish" id="wish" cols="30" rows="10"
+                    placeholder="Your wish"></textarea>
+                </li>
+                <li class="form__item form__item--wide">
+                  <input class="form__checkbox visually-hidden" type="checkbox" id="check" name="bonus-cola">
+                  <label class="form__label no-select-text" for="check">Want Coca-cola with
+                    present?</label>
+                </li>
+              </ul>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./scripts/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./scripts/script.js"></script>
 
 </body>
 
