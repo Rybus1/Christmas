@@ -223,10 +223,15 @@ img {
   cursor: pointer;
 }
 
+@media (max-width: 450px) {
+  .popup__toggle-button {
+    position: static;
+  }
+}
+
 @media (min-width: 1440px) {
   .popup__toggle-button {
     position: static;
-
   }
 }
 
@@ -299,7 +304,7 @@ img {
 @media (max-width: 450px) {
   .toggle {
     left: 0;
-    width: 100%;
+    width: 250vw;
     height: 100vh;
   }
 }
