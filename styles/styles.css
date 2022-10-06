@@ -76,12 +76,16 @@ img {
     color: #ffffff;
     background-color: #141429;
     position: relative;
+    min-width: 450px;
 }
 
-@media (min-width: 1440px) {
-    .body::-webkit-scrollbar {
-        display: none;
-    }
+.body::-webkit-scrollbar {
+    display: none;
+}
+
+.body--fixed {
+    overflow: hidden;
+    height: 100vh;
 }
 
 .swiper {
@@ -216,6 +220,7 @@ img {
     border-top-left-radius: 50%;
     z-index: 5;
     padding: 0;
+    cursor: pointer;
 }
 
 @media (min-width: 1440px) {
@@ -291,6 +296,14 @@ img {
     display: flex;
 }
 
+@media (max-width: 450px) {
+    .toggle {
+        left: 0;
+        width: 100%;
+        height: 100vh;
+    }
+}
+
 @media (min-width: 1440px) {
     .toggle {
         left: 39vw;
@@ -328,6 +341,13 @@ img {
     align-self: center;
 }
 
+@media (max-width: 450px) {
+    .toggle__list {
+        position: absolute;
+        left: 30vw;
+    }
+}
+
 @media (min-width: 1440px) {
     .popup--closed .toggle__list {
         opacity: 0;
@@ -338,7 +358,7 @@ img {
 @media (min-width: 1440px) {
     .toggle__list {
         position: absolute;
-        bottom: 54vh;
+        top: 117vh;
         left: 28vw;
         opacity: 1;
         align-self: auto;
@@ -469,7 +489,7 @@ img {
     padding-left: 24px;
     padding-right: 27px;
     padding-bottom: 393px;
-    background-image: url(../images/ded.png);
+    background-image: url("../images/ded.png");
     background-repeat: no-repeat;
     background-size: 544px 321px;
     background-position: -66px 394px;
@@ -484,9 +504,9 @@ img {
         padding-left: 148px;
         padding-bottom: 0;
         min-height: 100vh;
-        background-image: url(../images/ded.png);
-        background-size: 1001px 581px;
-        background-position: calc(100vw - 883px) bottom;
+        background-image: url("../images/ded.png"), url("../images/downwards-arrow.svg");
+        background-size: 1001px 581px, auto auto;
+        background-position: calc(100vw - 883px) bottom, bottom 51px left 166px;
     }
 
     .intro::after {
@@ -668,6 +688,7 @@ img {
         font-size: 56px;
         line-height: 65px;
         margin-bottom: 30px;
+        position: relative;
     }
 }
 
@@ -1027,6 +1048,7 @@ img {
     font-size: 20px;
     line-height: 23px;
     font-weight: 400;
+    cursor: pointer;
 }
 
 @media (min-width: 1440px) {
@@ -1111,6 +1133,7 @@ img {
     position: relative;
     padding-left: 27px;
     display: block;
+    cursor: pointer;
 }
 
 @media (min-width: 1440px) {

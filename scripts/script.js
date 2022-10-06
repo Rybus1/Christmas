@@ -1,3 +1,5 @@
+'use strict';
+
 const slider = document.querySelector('.swiper-container');
 let mySwiper;
 
@@ -38,14 +40,18 @@ function laptopSwiper() {
 function toggleChange() {
     const toggle = document.querySelector('.popup__toggle-button');
     const popup = document.querySelector('.popup');
+    const body = document.querySelector('.body');
 
     toggle.addEventListener('click', function () {
         if (popup.classList.contains('popup--closed')) {
             popup.classList.remove('popup--closed');
             popup.classList.add('popup--open');
+            body.classList.add('body--fixed');
+            
         } else {
             popup.classList.add('popup--closed');
             popup.classList.remove('popup--open');
+            body.classList.remove('body--fixed');
         }
     });
 }
@@ -81,6 +87,7 @@ function getRandomInt(max) {
 
 function snowCreator() {
     const snowContainer = document.querySelector('.body__snow-container');
+
     snowContainer.innerHTML = '';
     for (let i = 0; i < 50; i++) {
         const newDiv = document.createElement('div');
@@ -102,7 +109,6 @@ function snowCreator() {
 
 function menuAnimation () {
     const menuLink = document.querySelectorAll ('.menu__link');
-
     for (let i = 0; i < menuLink.length; i++) {
         const firstText = menuLink[i].querySelector('.menu__text');
         const secondText = document.createElement('span');
