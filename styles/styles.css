@@ -125,7 +125,6 @@ img {
   margin-right: auto;
 }
 
-
 @media (min-width: 1440px) {
   .header {
     justify-content: space-between;
@@ -221,11 +220,13 @@ img {
   z-index: 5;
   padding: 0;
   cursor: pointer;
+  margin-left: 0;
 }
 
 @media (max-width: 450px) {
   .popup__toggle-button {
     position: static;
+    margin-left: 137px;
   }
 }
 
