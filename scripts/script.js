@@ -90,7 +90,7 @@ function snowCreator() {
         newDiv.style.height = `${size}vw`;
         newDiv.style.left = `0`;
         if (window.innerWidth < 1440) {
-            newDiv.style.left = `${getRandomInt(450)}px`;
+            newDiv.style.left = `${getRandomInt(445)}px`;
         } else {
             newDiv.style.left = `${getRandomInt(100)}vw`;
         }
